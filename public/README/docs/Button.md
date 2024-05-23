@@ -89,20 +89,37 @@ You can use any combination of settings to open a drawer as long as you defined 
 
 ## **Other features**
 
-| Properties           	| Description                                          	| Example                                        	|
-|----------------------	|------------------------------------------------------	|------------------------------------------------	|
-| onClick              	| Passed function is executed on click                 	| onClick={()=>function()}                       	|
-| borderColor          	| color the border                                     	| borderColor={'black'}                          	|
-| backgroundColor      	| color the background                                 	| backgroundColor={'black'}                      	|
-| label                	| Button Label                                         	| label={'Button'}                               	|
-| labelColor           	| color the button label                               	| labelColor={'white'}                           	|
-| icon                 	| icon element                                         	| icon={<img src='/icons/svgsDaNet/user.svg' />} 	|
-| iconPosition         	| position of the icon ( left or right)                	| iconPosition={'right'}                         	|
-| tooltip              	| tooltip string                                       	| tooltip={'Button'}                             	|
-| small, normal, large 	| used to set button size                              	| small, normal, large                           	|
-| element              	| html elements to pass inside a drawer                	| element={<span>example</span>}                 	|
-| entity               	| entity name to use for the table drawer              	| entity={'account}                              	|
-| tableLabel           	| label used inside the table drawer                   	| tableLabel={'LABEL'}                           	|
-| getLine              	| function that returns the line selected on the table 	| getLine={() => {}}                             	|
-| FILTER               	| string used to filter the table in the drawer        	| '(Field Name) (eq /contains) (value)'          	|
-| disable              	|                                                      	| true or false.                                 	|
+| Properties                                       	| Description                                                                                      	| Example                                       	|
+|--------------------------------------------------	|--------------------------------------------------------------------------------------------------	|-----------------------------------------------	|
+| onClick                                          	| Passed function is executed on click                                                             	| onClick={()=&gt;function()}                   	|
+| borderColor                                      	| color the border                                                                                 	| borderColor={'black'}                         	|
+| backgroundColor                                  	| color the background                                                                             	| backgroundColor={'black'}                     	|
+| label                                            	| Button Label                                                                                     	| label={'Button'}                              	|
+| labelColor                                       	| color the button label                                                                           	| labelColor={'white'}                          	|
+| icon                                             	| icon element                                                                                     	| icon={#}                                      	|
+| iconPosition                                     	| position of the icon ( left or right)                                                            	| iconPosition={'right'}                        	|
+| tooltip                                          	| tooltip string                                                                                   	| tooltip={'Button'}                            	|
+| small, normal, large, none                       	| used to set button size                                                                          	| small                                         	|
+| element                                          	| html elements to pass inside a drawer                                                            	| element={example}                             	|
+| entity                                           	| entity name to use for the table drawer                                                          	| entity={'account}                             	|
+| tableLabel                                       	| label used inside the table drawer                                                               	| tableLabel={'LABEL'}                          	|
+| onGetLine                                        	| function that returns the line selected on the table                                             	| getLine={() =&gt; {}}                         	|
+| FILTER                                           	| string used to filter the table in the drawer                                                    	| '(Field Name) (eq /contains) (value)'         	|
+| disable                                          	| disables the button                                                                              	| true or false.                                	|
+| bold                                             	| bold in label                                                                                    	| bold                                          	|
+| smallIcon, largeIcon                             	| Used to set icon size                                                                            	| smallIcon                                     	|
+| hoverEffect                                      	| sets an hover effect on the button                                                               	| hoverEffect                                   	|
+| id                                               	| sets an id of the button.String, number, ...                                                     	| id={id}                                       	|
+| width                                            	| size of the width. Number                                                                        	| width={10}                                    	|
+| height                                           	| size of the height. Number                                                                       	| height={5}                                    	|
+| borderRadius                                     	| radius of the border. Number                                                                     	| borderRadius={5}                              	|
+| marginLeft, marginRight, marginTop, marginBottom 	| margin on the button                                                                             	| marginRight={10}                              	|
+| type                                             	| type of the button                                                                               	|                                               	|
+| errorMessage                                     	| string used in the error message if disableFunction is on                                        	| 'error! must do something before you do this! 	|
+| disableFunction                                  	| function that return true or false. if true when you try to click the button shows error message 	|                                               	|
+| marginNone                                       	| removes all margins. true or false.                                                              	| marginNone                                    	|
+| noHover                                          	| removes all hovers and effects.                                                                  	| noHover                                       	|
+| multiple                                         	| when in table drawer mode, lets you select multiple lines                                        	| multiple                                      	|
+| onSubmitValue                                    	| function. returns selected rows                                                                  	|                                               	|
+| value                                            	| selected rows. when using it, rows will be selected when opened table drawer                     	| [{....},{....}]                               	|
+|                                                  	|                                                                                                  	|                                               	|
