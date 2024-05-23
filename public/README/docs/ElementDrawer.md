@@ -16,9 +16,13 @@ To create a drawer like this, you need to use the open, onClose and element prop
 
 **Other features**
 
-| Properties    	| Description                                               	| Example                                                   	|
-|---------------	|-----------------------------------------------------------	|-----------------------------------------------------------	|
-| toolTipClose      | Label to show close tooltip                                   | toolTipClose={"tooltip"}                                     |
+| Properties   	| Description                               	| Example                  	|
+|--------------	|-------------------------------------------	|--------------------------	|
+| open         	| boolean . Opens the drawer                	| open={true}              	|
+| setOpen      	| set State value.                          	| setOpen={setOpen}        	|
+| toolTipClose 	| Label to show close tooltip               	| toolTipClose={"tooltip"} 	|
+| onClose      	| function that runs when the drawer closes 	|                          	|
+| element      	| HTML ELEMENT.                             	|                          	|
 
 Example element code:
 
