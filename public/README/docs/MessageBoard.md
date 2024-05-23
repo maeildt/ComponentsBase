@@ -13,10 +13,15 @@
 
 **Other features**
 
-| Properties | Description                                 | Example                  |
-|------------|---------------------------------------------|--------------------------|
-| open       | value of some useState to open this message |                          |
-| onClose    | Pass a function to active onClose           | onClose={()=>function()} |
-| title      | Label sat on top of the Message             | string                   |
-| body       | function that returns HTML code             |                          |
-| footer     | function that returns HTML code             |                          |
+| Properties   	| Description                                                              	| Example                     	|
+|--------------	|--------------------------------------------------------------------------	|-----------------------------	|
+| open         	| value of some useState to open this message                              	|                             	|
+| onClose      	| Pass a function to active onClose                                        	| onClose={()=&gt;function()} 	|
+| title        	| Label sat on top of the Message                                          	| string                      	|
+| body         	| function that returns HTML code                                          	|                             	|
+| footer       	| function that returns HTML code                                          	|                             	|
+| minWidth     	| style. string                                                            	|                             	|
+| warning      	| boolean. Shows a Warning icon                                            	|                             	|
+| width        	| style. string                                                            	|                             	|
+| maxWidth     	| style. string                                                            	|                             	|
+| headerButton 	| HTML ELEMENT. First used for a button but you can use it with everything 	|                             	|
