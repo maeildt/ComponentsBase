@@ -11,24 +11,19 @@
 To create a basic transfer list like this, you need to use the properties below.
 
 ![Alt text](../../../public/README/images/TransferList.png)
->            <M_TransferList primaryColor={"var(--color-orange)"} firstName={"Teste Left"} firstData={leftData} setFirstData={setLeftData} secondName={"Teste Right"} secondData={rightData} setSecondData={setRightData}/>
+>             <M_TransferList header={"LabelUserRoles"} entity={'role'} field={'Name'}valueIdField={'Id'}  value={value} setValue={setValue} />
 
 **Other features**
 
-| Properties 	| Description                          	| Example                  	|
-|------------	|--------------------------------------	|--------------------------	|
-| primaryColor  | Primary color of the component	    | primaryColor={"var(--color-orange)"}	    |
-| firstName     | Label of the first table      | firstName={"Teste Left"}             |
-| firstData  	| It's a state of the first table      | firstData={leftData}        |
-| setFirstData  | It's a set of the first table | setFirstData={setLeftData}    |
-| secondName    | Label of the second table         | secondName={"Teste Right"}     |
-| secondData    | It's a state of the second table        | secondData={rightData}     |
-| setSecondData | It's a set of the second table       | setSecondData={setRightData}     |
-| tooltipAdd    | Pass a name for the button        | tooltipAdd={"Add"}     |
-| tooltipRemove | Pass a name for the button        | tooltipRemove={"Remove"}     |
+| Properties     	| Description                                  	| Example                              	|
+|----------------	|----------------------------------------------	|--------------------------------------	|
+| primaryColor   	| Style. Primary color of the component        	| primaryColor={"var(--color-orange)"} 	|
+| secondaryColor 	| Style. Secondary color of the component      	|                                      	|
+| header         	| Label of the List                            	| header={"Teste "}                    	|
+| value          	| Array of Object. List of lines selected      	| value={value}                        	|
+| setValue       	| set of the value                             	| setValue={setValue}                  	|
+| entity         	| entity of the table opened in the drawer     	| entity={'Country'}                   	|
+| field          	| field used for the string showed in the List 	|                                      	|
+| disabled       	| boolean                                      	| disabled={true}                      	|
 
 
-**Helpers**
-
-> <b>To use the menu state:</b> <br>
-> ![Alt text](../../../public/README/images/TransferListState.png)
