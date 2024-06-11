@@ -11,7 +11,60 @@
 To create a basic lateral menu like this, you only need to use the showMenu, menus, setMenus and bodyPage properties.
 
 ![Alt text](../../../public/README/images/LateralMenu.png)
->            <M_LateralMenu showMenu={showMenu} menus={menus} setMenus={setMenus} bodyPage={<></>}/>
+>
+>       const tempMenu = [
+>           {
+>               "menuLabel": "LabelCurrentSeason",
+>               "menuIcon": <Album />,
+>               "menuOpen": false,
+>               "subMenus": [
+>                   {
+>                       "subMenuLabel": "LabelPractitioners",
+>                       "subMenuDisplay": "LabelPractitioners",
+>                       "subMenuOpen": false,
+>                       "subSubMenus": [],
+>                       "tableName": "Practitioner",
+>                       "subMenuUrl": "season/practitioners"
+>                   },
+>                   {
+>                       "subMenuLabel": "LabelTeams",
+>                       "subMenuDisplay": "LabelTeams",
+>                       "subMenuOpen": false,
+>                       "subSubMenus": [],
+>                       "tableName": "Team",
+>                       "subMenuUrl": "season/teams"
+>                   },
+>               ]
+>           },
+>           {
+>               "menuLabel": "LabelActions",
+>               "menuIcon": <Album />,
+>               "menuIconFilter": "invert(41%) sepia(74%) saturate(4623%) hue-rotate(354deg) brightness(91%) contrast(104%)",
+>               "menuOpen": false,
+>               "subMenus": [
+>                   {
+>                       "subMenuLabel": "LabelResultsAndOccurrences",
+>                       "subMenuDisplay": "LabelResultsAndOccurrences",
+>                       "subMenuOpen": false,
+>                       "subSubMenus": [],
+>                       "tableName": "Occurrence",
+>                       "subMenuUrl": "actions/resultsAndOccurrences"
+>                   },
+>                   {
+>                       "subMenuLabel": "LabelSectionAnalysis",
+>                       "subMenuDisplay": "LabelSectionAnalysis",
+>                       "subMenuOpen": false,
+>                       "subSubMenus": [],
+>                       "tableName": "SectionAnalysis",
+>                       "subMenuUrl": "actions/sectionAnalysis"
+>                   },
+>               ]
+>           },
+>        ]
+> 
+>       const [menus, setMenus] = useState(tempMenu)
+> 
+>       <M_LateralMenu showMenu={showMenu} menus={menus} setMenus={setMenus}  />
 
 **Other features**
 
